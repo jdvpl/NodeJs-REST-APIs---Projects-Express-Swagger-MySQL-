@@ -1,0 +1,10 @@
+mysql:
+//
+b529a839ec3973  //usuario
+:
+81a543d1        //pasword
+@
+us-cdbr-east-04.cleardb.com   // host
+/
+heroku_445edc95d4127e7   //db name
+?reconnect=true
