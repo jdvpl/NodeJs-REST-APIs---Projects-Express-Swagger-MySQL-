@@ -10,3 +10,6 @@
 ### instalar express
 `npm i express`
 
+### instalar nodemon para que escuche los cambios en tiempo real
+
+`npm i --save-dev nodemon`
