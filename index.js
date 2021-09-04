@@ -30,6 +30,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use("/users", usersRoutes);
 app.use("/posts", postsRoutes);
-app.listen(3000, () => {
+
+app.listen(process.env.PORT||   3000, () => {
   console.log("Escuchando el puerto: 3000 http://localhost:3000/");
 });
