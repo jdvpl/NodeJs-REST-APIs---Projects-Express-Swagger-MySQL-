@@ -34,3 +34,26 @@
 ### isntalando swagger 
 
 ` npm i --save swagger-jsdoc swagger-ui-express`
+
+### Endpoints
+
+#### Usuarios
+`
+/users/register ---post
+/users/login ---post
+`
+
+#### Posts
+`
+/posts/add-post ---post
+/posts/get-all-posts ---get
+/posts/add-post-comment ---post
+/posts/get-post-all-comments ---get with id
+/posts/like-post ---put with id
+/posts/dislike-post ---put with id
+/posts/delete-post ---put with id
+`
+
+### pasos para subirlo al servidor 
+
+`se subir la app a github`

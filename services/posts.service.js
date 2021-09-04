@@ -98,3 +98,20 @@ exports.getAllPosts = (data, callback) => {
     );
   };
   
+  exports.deletePost = (data, callback) => {
+    db.query(
+      `DELETE FROM posts 
+      WHERE id = ?`,
+      [data.postId],
+      (error, results, fields) => {
+        if (error) {
+          return callback(error);
+        }
+        if (results.affectedRows === 1) {
+          return callback(null, `Post Deleted Successfully`);
+        } else {
+          return callback(new Error("Invalid post"));
+        }
+      }
+    );
+  };
