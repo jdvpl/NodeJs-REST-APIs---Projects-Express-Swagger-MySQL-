@@ -29,3 +29,8 @@
 ### isntalar body-parser
 
 `npm i --save body-parser`
+
+
+### isntalando swagger 
+
+` npm i --save swagger-jsdoc swagger-ui-express`
