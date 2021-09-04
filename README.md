@@ -24,3 +24,8 @@
 ### IMPORTANTE crear una base de datos en heroku y hacer la configuracion basica en mysql workbench y en node
 
 `https://www.udemy.com/course/nodejs-restapi-its-simple/learn/lecture/26485220#overview`
+
+
+### isntalar body-parser
+
+`npm i --save body-parser`
