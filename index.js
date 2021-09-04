@@ -5,6 +5,7 @@ const swaggerUi = require("swagger-ui-express");
 const app = express();
 const bodyParser = require("body-parser");
 const usersRoutes = require("./routes/users.route");
+const postsRoutes = require("./routes/posts.route");
 
 app.use(bodyParser.json());
 
@@ -12,7 +13,7 @@ app.use(bodyParser.json());
 const swaggerOption = {
   swaggerDefinition: (swaggerJsdoc.Options = {
     info: {
-      title: "posts-mysql-swagger",
+      title: "my-posts",
       description: "API documentation",
       contact: {
         name: "Developer",
@@ -28,7 +29,8 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 /** Swagger Initialization - END */
 
 app.use("/users", usersRoutes);
+app.use("/posts", postsRoutes);
 
 app.listen(3000, () => {
-  console.log("I am ready to lisen you");
+  console.log("Escuchando el puerto: 3000 http://localhost:3000/");
 });
